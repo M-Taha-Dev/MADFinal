@@ -6,13 +6,15 @@ import 'package:firebase_storage/firebase_storage.dart';
 class task7 extends StatelessWidget {
   const task7({Key? key}) : super(key: key);
 
+
   @override
   Widget build(BuildContext context) {
+
     String ImageURL = '';
     return MaterialApp(
       title: 'Image Upload Screen',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-          appBar: AppBar(),
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
