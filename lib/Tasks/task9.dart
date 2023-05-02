@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     
+
       body: Center(
         child: _controller.value.isInitialized
             ? AspectRatio(

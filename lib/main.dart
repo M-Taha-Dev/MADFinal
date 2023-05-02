@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
 import './Tasks/task1.dart';
 import './Tasks/task2.dart';
 import './Tasks/task3.dart';
@@ -13,7 +16,10 @@ import './Tasks/task11.dart';
 import './Tasks/task12.dart';
 import './Tasks/task13.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(MyApp());
 }
 
