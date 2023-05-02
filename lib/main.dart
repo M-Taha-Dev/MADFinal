@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'Tasks/task13/push_notification.dart';
+import 'Tasks/task5/customWidgetScreen.dart';
 import 'firebase_options.dart';
 
 import './Tasks/task1.dart';
@@ -17,6 +18,7 @@ import './Tasks/task11.dart';
 import './Tasks/task12.dart';
 import './Tasks/task13.dart';
 import './Tasks/task8/list_of_items.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,7 +49,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
-  final List<Widget> _pages = [    task1(),    task2(), task3(),task4(),task5(),task6(),task7(),const ListOfItems(),task9(),task10(), task11(),task12(),task13(), ];
+  final List<Widget> _pages = [    task1(),    const task2(), task3(),task4(),const CustomWidgetScreen(),task6(),task7(),const ListOfItems(),task9(),task10(), task11(),task12(),task13(), ];
 
   @override
   Widget build(BuildContext context) {
