@@ -15,6 +15,7 @@ import './Tasks/task10.dart';
 import './Tasks/task11.dart';
 import './Tasks/task12.dart';
 import './Tasks/task13.dart';
+import './Tasks/task8/list_of_items.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -45,7 +46,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
-  final List<Widget> _pages = [    task1(),    task2(), task3(),task4(),task5(),task6(),task7(),task8(),task9(),task10(), task11(),task12(),task13(), ];
+  final List<Widget> _pages = [    task1(),    task2(), task3(),task4(),task5(),task6(),task7(),const ListOfItems(),task9(),task10(), task11(),task12(),task13(), ];
 
   @override
   Widget build(BuildContext context) {
